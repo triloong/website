@@ -15,3 +15,6 @@ keywords:
   - debian
   - linux
   - opensource
+
+plugins:
+  - jekyll-minifier
