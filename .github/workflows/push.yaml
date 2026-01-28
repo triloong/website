@@ -1,0 +1,35 @@
+# Build jekyll site and generate a tarball artifact
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+
+      - name: Install dependencies
+        run: |
+          gem install bundler -v "$(sed --silent -r '/BUNDLED WITH/,+1 {s/^[\t ]+//; p}' Gemfile.lock | tail -n +2)"
+          bundle install --frozen
+
+      - name: Build Jekyll site
+        run: JEKYLL_ENV=production bundle exec jekyll build --future
+
+      - name: Create tarball artifact
+        run: |
+          tar --owner=0 --group=0 -czf loong13-site.tar.gz -C _site .
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: loong13-site
+          path: loong13-site.tar.gz

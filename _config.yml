@@ -1,0 +1,17 @@
+title: Loong13 - Debian Trixie 13 for LoongArch
+description:
+baseurl: ""
+url: "http://loong13.debian.net/"
+
+
+
+keywords:
+  - loong13
+  - loong64
+  - loongarch
+  - debian loongarch
+  - debian loong64
+  - debian trixie
+  - debian
+  - linux
+  - opensource

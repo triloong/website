@@ -1,0 +1,254 @@
+- package: bglibs
+  version: 2.04+dfsg-8+b3+~loong64+1
+  oldversion: 2.04+dfsg-8+b3
+  description: >
+    Modifications were made to fix the race conditions in
+    the build system, which prevent successful compilation when
+    high parallelism is used.
+  bugs:
+    - debian: "1121836"
+
+- package: dbus-broker
+  version: 37-2+deb13u~+loong64+1
+  oldversion: 37-2
+  description: >
+    Modifications were made to fix build issues on newer kernels
+    which do not refuse to return stale pidfd when a process tries to
+    get the pidfd of its unix socket peer.
+  bugs:
+    - github:
+        repo: "bus1/dbus-broker"
+        id: "409"
+
+- package: grep
+  version: 3.11-4+b1+~loong64+1
+  oldversion: 3.11-4+b1
+  description: >
+    Modifications were made to ensure the behavior of grep is the same
+    as built with pcre2 older than 10.43, since grep for other architectures
+    in Trixie is built with pcre2 10.42. The behavior change prevents
+    geeqie from building successfully.
+
+- package: gvars3
+  version: 0.0~git20220105194034.62f5a78-4.1+deb13u~+loong64+1
+  oldversion: 0.0~git20220105194034.62f5a78-4.1
+  description: >
+    Modifications were made to add missing -fPIC flag when building shared
+    libraries.
+
+- package: hugo
+  version: 0.131.0-1+deb13u~+loong64+1
+  oldversion: 0.131.0-1
+  description: >
+    Modifications were made to fix unit tests failures due to slightly different
+    PNG images generated due to FMA (Fused Multiply-Add) instruction support,
+    which had been fixed for other architectures.
+  bugs:
+    - github:
+        repo: "gohugoio/hugo"
+        id: "6387"
+  loongarch_only: true
+
+
+- package: kpublictransport
+  version: 25.04.3-1+deb13u~+loong64+1
+  oldversion: 25.04.3-1
+  description: >
+    Modifications were made to fix the race conditions in the build
+    system when building with high parallelism.
+  bugs:
+    - debian: "1113084"
+
+- package: imath
+  version: 3.1.12-1+b3+~loong64+1
+  oldversion: 3.1.12-1+b3
+  description: >
+    Modifications were made to correct the calling sequence of dh_numpy3
+    in the building script to prevent missing generated dependency to python3-numpy.
+    The missing dependency prevents successful build of opencv.
+
+- package: iperf3
+  version: 3.18-2+deb13u1+~loong64+1
+  oldversion: 3.18-2+deb13u1
+  description: >
+    Modifications were made to backport fixes from later versions to
+    prevent unit test failures.
+  bugs:
+    - debian: "1120866"
+  superseded: true
+
+- package: libdazzle
+  version: 3.44.0-3+deb13u~+loong64+1
+  oldversion: 3.44.0-3
+  description: >
+    Modifications were made to increase the allowed time for certain unit tests
+    to complete, preventing test failures during build.
+
+- package: libyuv
+  version: 0.0.1904.20250204-1+deb13u~loong64+1
+  oldversion: 0.0.1904.20250204-1
+  description: >
+    Modifications were made to backport fixes from later versions to fix
+    LoongArch optimized kernels.
+  bugs:
+    - url:
+        text: "Chromium CR 6878364"
+        link: "https://chromium-review.googlesource.com/c/libyuv/libyuv/+/6878364"
+  loongarch_only: true
+
+- package: mariadb
+  version: 1:11.8.3-0+deb13u1+~loong64+1
+  oldversion: 1:11.8.3-0+deb13u1
+  description: >
+    Modifications were made to backport fixes from later versions to fix
+    build issues on network isolated environments.
+  bugs:
+    - url:
+        text: "MariaDB Jira MDEV-36668"
+        link: "https://jira.mariadb.org/browse/MDEV-36668"
+
+- package: openblas
+  version: 0.3.29+ds-3+deb13u~+loong64+1
+  oldversion: 0.3.29+ds-3
+  description: >
+    Modifications were made to disable lasx kernels that may cause
+    incorrect output results, which prevents successful build of xtb.
+  superseded: true
+  loongarch_only: true
+
+- package: openblas
+  version: 0.3.29+ds-3+deb13u~+loong64+2
+  oldversion: 0.3.29+ds-3+deb13u~+loong64+1
+  description: >
+    Modifications were made to backport fixes from later versions to fix
+    incorrect results in lasx kernels when running on LoongArch processors
+    with 32MiB of L3 cache, which prevents successful build of xtb.
+  loongarch_only: true
+  bugs:
+    - debian: "1126103"
+    - github:
+        repo: "OpenMathLib/OpenBLAS"
+        id: "5602"
+
+- package: qtbase-opensource-src
+  version: 5.15.15+dfsg-6+deb13u~+loong64+1
+  oldversion: 5.15.15+dfsg-6
+  description: >
+    Modifications were made to backport fixes from later versions to
+    fix data races in QReadWriteLock on weakly ordered architectures, which
+    prevents successful build of qt3d-opensource-src.
+  bugs:
+    - debian: "1122641"
+    - link:
+        text: "QTBUG-142321"
+        link: "https://qt-project.atlassian.net/browse/QTBUG-142321"
+
+- package: rust-cty
+  version: 0.2.1-1+b2+~loong64+1
+  oldversion: 0.2.1-1+b2
+  description: >
+    Modifications were made to enable building on LoongArch architecture.
+  bugs:
+    - github:
+        repo: "japaric/cty"
+        id: "23"
+  loongarch_only: true
+
+- package: rust-glib
+  version: 0.20.9-1+deb13u~+loong64+1
+  oldversion: 0.20.9-1
+  description: >
+    Modifications were made to regenerate bindings code to prevent build
+    failures due to updated rust-gobject-sys.
+  bugs:
+    - debian: "1104991"
+
+- package: rust-glib-0.18
+  version: 0.18.5-4+deb13u~+loong64+1
+  oldversion: 0.18.5-4
+  description: >
+    Modifications were made to regenerate bindings code to prevent build
+    failures due to updated rust-gobject-sys-0.18.
+  bugs:
+    - debian: "1104991"
+
+- package: sudo
+  version: 1.9.16p2-3+deb13u~+loong64+1
+  oldversion: 1.9.16p2-3
+  description: >
+    Modifications were made to fix the race conditions in
+    the build system, which prevent successful compilation when
+    high parallelism is used.
+  bugs:
+    - github:
+        repo: "sudo-project/sudo"
+        id: "487"
+
+- package: vamp-plugin-sdk
+  version: 2.10.0-5+deb13u~+loong64+1
+  oldversion: 2.10.0-5
+  description: >
+    Modifications were made to fix the race conditions in
+    the build system, which prevent successful compilation when
+    high parallelism is used.
+  bugs:
+    - debian: "1121890"
+
+- package: debian-installer
+  versions:
+    - version: 20250803+deb13u2+~loong64+1
+      oldversion: 20250803+deb13u2
+      superseded: true
+    - version: 20250803+deb13u3+~loong64+1
+      oldversion: 20250803+deb13u3
+  description: >
+    Modifications were made to enable cdrom based gtk installer,
+    netboot installer, and add keyrings for loong13 repos into the
+    generated installer image.
+  bugs:
+    - url:
+        text: "triloong/debian-installer"
+        link: "https://github.com/triloong/debian-installer"
+  loongarch_only: true
+
+- package: debian-loong64-non-official-archive-keyring
+  version: 2025.12.22
+  oldversion: ""
+  description: >
+    Keyring package for this archive, containing the public keys used to
+    verify the authenticity of packages and a set of scripts to inject into
+    the installer images to override the default Debian archive keyrings and
+    the repository URLs.
+  loongarch_only: true
+  bugs:
+    - url:
+        text: "triloong/debian-loong64-keyring"
+        link: "https://github.com/triloong/debian-loong64-keyring"
+
+- package: chromium
+  versions:
+    - version: 143.0.7499.109-1~deb13u1+~loong64+1
+      oldversion: 143.0.7499.109-1~deb13u1
+      superseded: true
+    - version: 143.0.7499.169-1~deb13u1+~loong64+1
+      oldversion: 143.0.7499.169-1~deb13u1
+    - version: 143.0.7499.192-1~deb13u1+~loong64+1
+      oldversion: 143.0.7499.192-1~deb13u1
+      superseded: true
+    - version: 144.0.7559.59-1~deb13u1+~loong64+1
+      oldversion: 144.0.7559.59-1~deb13u1
+      superseded: true
+    - version: 144.0.7559.96-1~deb13u1+~loong64+1
+      oldversion: 144.0.7559.96-1~deb13u1
+  description: >
+    Modifications were made to dynamically link libc++ instead of
+    statically linking it to prevent build failures due to libc++
+    built with normal code model on LoongArch64 architecture with gcc-14
+    by default while chromium requires medium code model.
+
+
+# trixie|main|source: chromium 143.0.7499.169-1~deb13u1+~loong64+1
+
+
+
+# trixie-proposed-updates|main|source: chromium 144.0.7559.96-1~deb13u1+~loong64+1
