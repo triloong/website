@@ -14,7 +14,7 @@
 
 <meta property="og:title" content="{{ page_title }}" />
 <meta property="og:description" content="{{ page_desc  }}" />
-<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 {% if page.date %}

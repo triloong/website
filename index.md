@@ -30,8 +30,8 @@ procedure for building and uploading Debian packages has been followed as closel
 
 ## Repositories
 
-- Main APT Repository: <code>deb <a href="/debian-loong64/">{{site.url}}/debian-loong64/</a> trixie main contrib non-free non-free-firmware</code>
-- Security Updates: <code>deb <a href="/debian-loong64-security/">{{site.url}}/debian-loong64-security/</a> trixie main contrib non-free non-free-firmware</code>
+- Main APT Repository: <code>deb <a href="/debian-loong64/">{{ '/debian-loong64/' | absolute_url }}</a> trixie main contrib non-free non-free-firmware</code>
+- Security Updates: <code>deb <a href="/debian-loong64-security/">{{ '/debian-loong64-security/' | absolute_url }}</a> trixie main contrib non-free non-free-firmware</code>
 
 ## Warranty and Support
 

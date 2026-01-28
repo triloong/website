@@ -1,7 +1,7 @@
 title: Loong13 - Debian Trixie 13 for LoongArch
 description:
 baseurl: ""
-url: "http://loong13.debian.net/"
+url: "http://loong13.debian.net"
 
 
 
