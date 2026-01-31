@@ -250,6 +250,16 @@
     built with normal code model on LoongArch64 architecture with gcc-14
     by default while chromium requires medium code model.
 
+- package: openjdk-21
+  version: 21.0.10+7-1~deb13u1+~loong64+1
+  oldversion: 21.0.10+7-1~deb13u1
+  description: >
+    Modifications were made to disable some of the tests that take
+    too long to complete on LoongArch architecture, preventing
+    successful build of openjdk-21.
+  bugs:
+    - debian: "1121113"
+  loongarch_only: true
 
 # trixie|main|source: chromium 143.0.7499.169-1~deb13u1+~loong64+1
 
