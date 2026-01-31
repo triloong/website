@@ -1,2 +1,0 @@
-def: { "author": "Jekyll User", "layout": "post", "category": "General" }
-ovr: { "author": "Specific Author", "tags": ["tech", "jekyll"] }
