@@ -243,6 +243,8 @@
       superseded: true
     - version: 144.0.7559.109-1~deb13u1+~loong64+1
       oldversion: 144.0.7559.109-1~deb13u1
+    - version: 144.0.7559.109-2~deb13u1+~loong64+1
+      oldversion: 144.0.7559.109-2~deb13u1
   loongarch_only: true
   description: >
     Modifications were made to dynamically link libc++ instead of
@@ -261,8 +263,13 @@
     - debian: "1121113"
   loongarch_only: true
 
-# trixie|main|source: chromium 143.0.7499.169-1~deb13u1+~loong64+1
-
-
-
-# trixie-proposed-updates|main|source: chromium 144.0.7559.96-1~deb13u1+~loong64+1
+- package: openjdk-25
+  version: 25.0.2+10-1~deb13u2+~loong64+1
+  oldversion: 25.0.2+10-1~deb13u2
+  description: >
+    Modifications were made to disable some of the tests that take
+    too long to complete on LoongArch architecture, preventing
+    successful build of openjdk-25.
+  bugs:
+    - debian: "1121113"
+  loongarch_only: true
