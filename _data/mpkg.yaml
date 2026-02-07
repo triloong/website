@@ -266,10 +266,24 @@
 - package: openjdk-25
   version: 25.0.2+10-1~deb13u2+~loong64+1
   oldversion: 25.0.2+10-1~deb13u2
+  superseded: true
   description: >
     Modifications were made to disable some of the tests that take
     too long to complete on LoongArch architecture, preventing
     successful build of openjdk-25.
   bugs:
     - debian: "1121113"
+  loongarch_only: true
+
+- package: openjdk-25
+  version: 25.0.2+10-1~deb13u2+~loong64+2
+  oldversion: 25.0.2+10-1~deb13u2+~loong64+1
+  description: >
+    Modifications were made to disable some of the tests that take
+    too long to complete on LoongArch architecture, preventing
+    successful build of openjdk-25 and fix a problem in the building
+    scripts that prevents parallel running of tests.
+  bugs:
+    - debian: "1121113"
+    - debian: "1127309"
   loongarch_only: true
