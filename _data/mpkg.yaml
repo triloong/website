@@ -173,8 +173,11 @@
     - debian: "1104991"
 
 - package: sudo
-  version: 1.9.16p2-3+deb13u~+loong64+1
-  oldversion: 1.9.16p2-3
+  versions:
+    - version: 1.9.16p2-3+deb13u~+loong64+1
+      oldversion: 1.9.16p2-3
+    - version: 1.9.16p2-3+deb13u1+~loong64+1
+      oldversion: 1.9.16p2-3+deb13u1
   description: >
     Modifications were made to fix the race conditions in
     the build system, which prevent successful compilation when
@@ -252,6 +255,7 @@
       superseded: true
     - version: 145.0.7632.109-1~deb13u3+~loong64+1
       oldversion: 145.0.7632.109-1~deb13u3
+      superseded: true
     - version: 145.0.7632.116-1~deb13u1+~loong64+1
       oldversion: 145.0.7632.116-1~deb13u1
   loongarch_only: true
