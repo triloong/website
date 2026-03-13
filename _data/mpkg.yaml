@@ -270,6 +270,21 @@
     built with normal code model on LoongArch64 architecture with gcc-14
     by default while chromium requires medium code model.
 
+- package: chromium
+  version: 146.0.7680.71-1~deb13u1+~loong64+1
+  oldversion: 146.0.7680.71-1~deb13u1
+  loongarch_only: true
+  description: >
+    Modifications were made to dynamically link libc++ instead of
+    statically linking it to prevent build failures due to libc++
+    built with normal code model on LoongArch64 architecture with gcc-14
+    by default while chromium requires medium code model. Modifications
+    were also made to backport a fix for a build failure in boringssl
+    that happens when expected value of __NR_getrandom is not defined.
+  bugs:
+    - debian: "1130569"
+
+
 - package: openjdk-21
   version: 21.0.10+7-1~deb13u1+~loong64+1
   oldversion: 21.0.10+7-1~deb13u1
