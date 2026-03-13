@@ -204,6 +204,8 @@
       superseded: true
     - version: 20250803+deb13u3+~loong64+1
       oldversion: 20250803+deb13u3
+    - version: 20250803+deb13u4+~loong64+1
+      oldversion: 20250803+deb13u4
   description: >
     Modifications were made to enable cdrom based gtk installer,
     netboot installer, and add keyrings for loong13 repos into the
