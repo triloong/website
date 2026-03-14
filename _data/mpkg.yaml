@@ -106,6 +106,7 @@
     - url:
         text: "MariaDB Jira MDEV-36668"
         link: "https://jira.mariadb.org/browse/MDEV-36668"
+  superseded: true
 
 - package: openblas
   version: 0.3.29+ds-3+deb13u~+loong64+1
@@ -142,6 +143,7 @@
     - link:
         text: "QTBUG-142321"
         link: "https://qt-project.atlassian.net/browse/QTBUG-142321"
+  superseded: true
 
 - package: rust-cty
   version: 0.2.1-1+b2+~loong64+1
@@ -176,6 +178,7 @@
   versions:
     - version: 1.9.16p2-3+deb13u~+loong64+1
       oldversion: 1.9.16p2-3
+      superseded: true
     - version: 1.9.16p2-3+deb13u1+~loong64+1
       oldversion: 1.9.16p2-3+deb13u1
   description: >
@@ -204,6 +207,7 @@
       superseded: true
     - version: 20250803+deb13u3+~loong64+1
       oldversion: 20250803+deb13u3
+      superseded: true
     - version: 20250803+deb13u4+~loong64+1
       oldversion: 20250803+deb13u4
   description: >
@@ -237,6 +241,7 @@
       superseded: true
     - version: 143.0.7499.169-1~deb13u1+~loong64+1
       oldversion: 143.0.7499.169-1~deb13u1
+      superseded: true
     - version: 143.0.7499.192-1~deb13u1+~loong64+1
       oldversion: 143.0.7499.192-1~deb13u1
       superseded: true

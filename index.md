@@ -23,8 +23,8 @@ procedure for building and uploading Debian packages has been followed as closel
 
 ## Downloads
 
-- Installer CD Image (ISO): [debian-13.3.0-loong64-netinst.iso](/debian-loong64-cd/13.3.0/loong64/iso-cd/debian-13.3.0-loong64-netinst.iso)
-- Offline DVD Image (ISO): [debian-13.3.0-loong64-DVD-1.iso](/debian-loong64-cd/13.3.0/loong64/iso-dvd/debian-13.3.0-loong64-DVD-1.iso)
+- Installer CD Image (ISO): [debian-13.4.0-loong64-netinst.iso](/debian-loong64-cd/13.4.0/loong64/iso-cd/debian-13.4.0-loong64-netinst.iso)
+- Offline DVD Image (ISO): [debian-13.4.0-loong64-DVD-1.iso](/debian-loong64-cd/13.4.0/loong64/iso-dvd/debian-13.4.0-loong64-DVD-1.iso)
 - Network Installer Image (ISO): [mini.iso](/debian-loong64/dists/trixie/main/installer-loong64/current/images/netboot/mini.iso)
 - More installation images: [debian-loong64-cd/](/debian-loong64-cd/)
 
