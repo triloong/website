@@ -172,7 +172,7 @@ ensure build compatibility on LoongArch64 systems.
   {% endfor %}
   {% assign mpkgs = mpkgs | group_by: 'package' | sort: 'name' %}
   {% for pkg_n in mpkgs %}
-  {% assign pkg_it = pkg_n.items | sort: 'version' %}
+  {% assign pkg_it = pkg_n.items | sort_debver: 'version' %}
   {% for pkg in pkg_it %}
   <tr class="{% if pkg.superseded %}superseded{% endif %}">
     <td>{{ pkg.package }}</td>
