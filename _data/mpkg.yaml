@@ -293,6 +293,8 @@
     - version: 148.0.7778.96-1~deb13u1+~loong64+1
       oldversion: 148.0.7778.96-1~deb13u1
       superseded: true
+    - version: 148.0.7778.178-1~deb13u1+~loong64+1
+      oldversion: 148.0.7778.178-1~deb13u1
   loongarch_only: true
   description: >
     Modifications were made to dynamically link libc++ instead of
@@ -332,6 +334,7 @@
   version: 148.0.7778.167-1~deb13u1+~loong64+2
   oldversion: 148.0.7778.167-1~deb13u1
   loongarch_only: true
+  superseded: true
   description: >
     Modifications were made to dynamically link libc++ instead of
     statically linking it to prevent build failures due to libc++
