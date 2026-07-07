@@ -214,6 +214,8 @@
       superseded: true
     - version: 20250803+deb13u5+~loong64+1
       oldversion: 20250803+deb13u5
+    - version: 20250803+deb13u6+~loong64+1
+      oldversion: 20250803+deb13u6
   description: >
     Modifications were made to enable cdrom based gtk installer,
     netboot installer, and add keyrings for loong13 repos into the
@@ -295,8 +297,20 @@
       superseded: true
     - version: 148.0.7778.178-1~deb13u1+~loong64+1
       oldversion: 148.0.7778.178-1~deb13u1
+      superseded: true
     - version: 148.0.7778.215-1~deb13u1+~loong64+1
       oldversion: 148.0.7778.215-1~deb13u1
+      superseded: true
+    - version: 149.0.7827.114-1~deb13u1+~loong64+1
+      oldversion: 149.0.7827.114-1~deb13u1
+      superseded: true
+    - version: 149.0.7827.155-1~deb13u1+~loong64+1
+      oldversion: 149.0.7827.155-1~deb13u1
+      superseded: true
+    - version: 149.0.7827.196-1~deb13u1+~loong64+1
+      oldversion: 149.0.7827.196-1~deb13u1
+    - version: 150.0.7871.46-1~deb13u1+~loong64+1
+      oldversion: 150.0.7871.46-1~deb13u1
   loongarch_only: true
   description: >
     Modifications were made to dynamically link libc++ instead of
