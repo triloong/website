@@ -214,6 +214,7 @@
       superseded: true
     - version: 20250803+deb13u5+~loong64+1
       oldversion: 20250803+deb13u5
+      superseded: true
     - version: 20250803+deb13u6+~loong64+1
       oldversion: 20250803+deb13u6
   description: >
@@ -292,6 +293,7 @@
       superseded: true
     - version: 147.0.7727.137-1~deb13u1+~loong64+1
       oldversion: 147.0.7727.137-1~deb13u1
+      superseded: true
     - version: 148.0.7778.96-1~deb13u1+~loong64+1
       oldversion: 148.0.7778.96-1~deb13u1
       superseded: true
@@ -309,8 +311,12 @@
       superseded: true
     - version: 149.0.7827.196-1~deb13u1+~loong64+1
       oldversion: 149.0.7827.196-1~deb13u1
+      superseded: true
     - version: 150.0.7871.46-1~deb13u1+~loong64+1
       oldversion: 150.0.7871.46-1~deb13u1
+      superseded: true
+    - version: 150.0.7871.100-1~deb13u1+~loong64+1
+      oldversion: 150.0.7871.100-1~deb13u1
   loongarch_only: true
   description: >
     Modifications were made to dynamically link libc++ instead of
