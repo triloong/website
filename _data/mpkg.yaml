@@ -217,6 +217,8 @@
       superseded: true
     - version: 20250803+deb13u6+~loong64+1
       oldversion: 20250803+deb13u6
+    - version: 20250803+deb13u7+~loong64+1
+      oldversion: 20250803+deb13u7
   description: >
     Modifications were made to enable cdrom based gtk installer,
     netboot installer, and add keyrings for loong13 repos into the
@@ -422,3 +424,14 @@
     - debian: "1121113"
     - debian: "1127309"
   loongarch_only: true
+
+- package: macaulay2
+  version: 1.24.11+ds-5+deb13u~+loong64+1
+  oldversion: 1.24.11+ds-5
+  description: >
+    Modifications were made to fix build issues on hosts with many
+    CPU cores.
+  bugs:
+    - github:
+        repo: "Macaulay2/M2"
+        id: "4685"
