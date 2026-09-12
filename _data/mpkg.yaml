@@ -217,6 +217,7 @@
       superseded: true
     - version: 20250803+deb13u6+~loong64+1
       oldversion: 20250803+deb13u6
+      superseded: true
     - version: 20250803+deb13u7+~loong64+1
       oldversion: 20250803+deb13u7
   description: >
@@ -319,6 +320,7 @@
       superseded: true
     - version: 150.0.7871.100-1~deb13u1+~loong64+1
       oldversion: 150.0.7871.100-1~deb13u1
+      superseded: true
     - version: 150.0.7871.114-1~deb13u1+~loong64+1
       oldversion: 150.0.7871.114-1~deb13u1
       superseded: true
