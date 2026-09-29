@@ -437,3 +437,12 @@
     - github:
         repo: "Macaulay2/M2"
         id: "4685"
+
+- package: libheif
+  version: 1.23.4-1~deb13u1+~loong64+1
+  oldversion: 1.23.4-1~deb13u1
+  description: >
+    Modifications were made to revert work arounds from unstable
+    to disable the kvazaar plugin.
+  bugs:
+    - debian: "1127385"
