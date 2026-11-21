@@ -220,6 +220,9 @@
       superseded: true
     - version: 20250803+deb13u7+~loong64+1
       oldversion: 20250803+deb13u7
+      superseded: true
+    - version: 20250803+deb13u8+~loong64+1
+      oldversion: 20250803+deb13u8
   description: >
     Modifications were made to enable cdrom based gtk installer,
     netboot installer, and add keyrings for loong13 repos into the
@@ -329,6 +332,7 @@
       superseded: true
     - version: 150.0.7871.181-1~deb13u1+~loong64+1
       oldversion: 150.0.7871.181-1~deb13u1
+      superseded: true
     - version: 151.0.7922.71-1~deb13u1+~loong64+1
       oldversion: 151.0.7922.71-1~deb13u1
       superseded: true
@@ -441,6 +445,7 @@
 - package: libheif
   version: 1.23.4-1~deb13u1+~loong64+1
   oldversion: 1.23.4-1~deb13u1
+  superseded: true
   description: >
     Modifications were made to revert work arounds from unstable
     to disable the kvazaar plugin.
