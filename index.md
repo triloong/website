@@ -150,8 +150,13 @@ ensure build compatibility on LoongArch64 systems.
     .superseded {
         text-decoration: line-through;
     }
+    #hide-superseded:checked ~ table tr.superseded {
+        display: none;
+    }
 </style>
 <table>
+  <input id="hide-superseded" type="checkbox">
+  <label for="hide-superseded">Hide superseded packages</label>
   <thead>
     <tr>
       <th>Package</th>
